@@ -46,7 +46,7 @@
 
     <!-- page wrap
     ================================================== -->
-    <div id="page" class="s-pagewrap">
+    <!-- <div id="page" class="s-pagewrap"> -->
 
 
         <!-- # site header 
@@ -62,7 +62,7 @@
                     </div>
 
                     <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
-                </div> <!-- end s-header__block -->
+                </div>
 
                 <nav class="s-header__nav">
 
@@ -75,12 +75,12 @@
 
                     <div class="s-header__contact">
                         <a href="contact.html" class="btn btn--primary s-header__contact-btn">Let's Work Together</a>
-                    </div> <!-- s-header__contact -->
+                    </div>
 
-                </nav> <!-- end s-header__nav -->
+                </nav>
 
-            </div> <!-- end s-header__inner -->
-        </header> <!-- end s-header -->
+            </div>
+        </header>
 
 
         <!-- # site main content
@@ -140,95 +140,61 @@
                     </div>
                 </div>
             </section> <!--pageheader -->
-
-
-
-            <div class="custom-card">
-                <div id="contact-form-container">
-                    <h3 class="form-header">Let's Work Together</h3>
-
-                    <form id="contact-form" method="post" action="contact-form-process.php">
-                        <!-- <div class="row"> -->
-
-                        <div class="form-group">
-                            <label for="Name" class="form-label">Your name</label>
-                            <div class="input-group">
-                                <input type="text" id="Name" name="Name" class="form-control" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="Email" class="form-label">Your email address</label>
-                            <div class="input-group">
-                                <input type="email" id="Email" name="Email" class="form-control" required>
-                            </div>
-                        </div>
-                </div>
-
-
-                <div class="form-group">
-                    <label for="Message" class="form-label">Your message</label>
-                    <div class="input-group">
-                        <textarea id="Message" name="Message" class="form-control" 
-                            required></textarea>
-                    </div>
-                </div>
-
-              
-                    <button type="submit" id="submit-button" class="btn btn-primary">Send Message</button>
-               
-            </div>
-
-
-
         </section>
 
+        <section id="contact-form-section">
+            <div id="contact-form-container" class="container">
+                <!-- <div class="custom-card row"> -->
+                <h3 class="form-header text-center">Let's Work Together</h3>
+                <form id="contact-form" method="post">
+                    <!-- Left Column -->
+                    <div class="form-group  col-md-6">
+                        <label for="Name" class="form-label">Your Name</label>
+                        <div class="input-group">
+                            <input type="text" id="Name" name="Name" class="form-control" required>
+                        </div>
+                    </div>
 
+                    <div class="form-group col-md-6">
+                        <label for="Email" class="form-label">Your Email Address</label>
+                        <div class="input-group">
+                            <input type="email" id="Email" name="Email" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="Phone" class="form-label">Your Phone Number</label>
+                        <div class="input-group">
+                            <input type="text" id="Phone" name="Phone" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="form-group col-12 col-md-6">
+                        <label for="Message" class="form-label">Your Message</label>
+                        <div class="input-group">
+                            <textarea id="Message" name="Message" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-12 text-center">
+                        <button type="submit" id="submit-button" class="btn btn-primary mt-3">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            <!-- </div> -->
+        </section>
 
 
         <!-- # footer 
         ================================================== -->
         <footer class="s-footer">
-            <div class="row s-footer__content">
-                <!-- <div class="column xl-6 lg-6 md-12 s-footer__block s-footer__about">                    
-                    <h3>About Dishant</h3>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas illum quasi facere libero, 
-                    fugiat laboriosam possimus reprehenderit eveniet vero voluptatum fugit ad quis veritatis suscipit beatae 
-                    incidunt perferendis tempore earum hic repellendus quisquam recusandae ipsa id esse. Nobis, aut deleniti.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere ratione dignissimos.
-                    </p>               
-                </div>                 -->
-                <!-- <div class="column xl-3 lg-6 md-12 s-footer__block s-footer__site-links">
-                    <h3>Site Links</h3>
-                    <ul class="link-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="blog.html">Journal</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="https://www.dreamhost.com/r.cgi?287326">DreamHost</a></li>
-                    </ul>
-                </div> -->
-                <!-- <div class="column xl-3 lg-6 md-12 tab-12 s-footer__block s-footer__newsletter">
-                    <h3>Newsletter</h3>
-
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere ratione dignissimos.
-                    </p>
-
-                    <div class="subscribe-form">
-                        <form id="mc-form" class="mc-form">
-                            <input type="email" name="EMAIL" id="mce-EMAIL" class="u-fullwidth text-center" placeholder="Your Email Address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
-                            <input type="submit" name="subscribe" value="Subscribe" class="btn btn--primary btn--small u-fullwidth">
-                            <div class="mc-status"></div>
-                        </form>
-                    </div>
-                </div> -->
-            </div>
-
-            <div class="row s-footer__bottom">
-                <div class="column xl-6 lg-12">
+           
+            <div class="row s-footer__bottom">  
+                <!-- <div class="column xl-6 lg-12"> -->
+                    <!-- </div>            -->
+                    <div class="column xl-6 lg-12">
+                    
                     <ul class="s-footer__social social-list">
                         <li>
                             <a href="https://www.linkedin.com/in/dishant-mandaliya">
@@ -271,14 +237,18 @@
                                 <span class="u-screen-reader-text">Facebook</span>
                             </a>
                         </li>
-                    </ul> <!-- end s-footer__social -->
+                    </ul>
                 </div>
+              
+                <!-- s-header__contact -->
+
+                <!-- <h3>Follow Me</h3> -->
                 <div class="column xl-6 lg-12">
                     <p class="ss-copyright">
                     <p>&copy; <span id="currentyear"></span> Dishant Mandaliya.</p>
                     </p>
                 </div>
-
+            
                 <div class="ss-go-top">
                     <a class="smoothscroll" title="Back to Top" href="#top">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none"
@@ -288,17 +258,15 @@
                             <line x1="12" y1="18" x2="12" y2="6"></line>
                         </svg>
                     </a>
-                </div> <!-- end ss-go-top -->
+                </div>
             </div>
+        </footer>
 
-        </footer> <!-- end s-footer -->
 
-    </div> <!-- end page-wrap -->
-
-    <!-- Java Script
+        <!-- Java Script
     ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
 
 
 </body>
