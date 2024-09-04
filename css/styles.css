@@ -4094,7 +4094,7 @@ td:last-child {
 .s-clients {
 	padding-top     : var(--vspace-6);
 	padding-bottom  : var(--vspace-4);
-	background-color: var(--color-3);
+	/* background-color: var(--color-3); */
 }
 
 .s-clients__content-block:first-child {

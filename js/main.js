@@ -390,12 +390,13 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('downloadBtn').addEventListener('click', function(event) {
         event.preventDefault(); // Prevent the default anchor behavior
         const link = document.createElement('a');
-        link.href = '/Dishant-Images/DISHANT-RESUME.pdf'; // Replace with the path to your PDF file
+        link.href = 'Dishant-Images/DISHANT-RESUME.pdf'; // Replace with the path to your PDF file
         link.download = 'DISHANT-RESUME.pdf'; // The name of the downloaded file
         link.click();
         document.body.removeChild(link);
       });
                                    
     });
-    
+
+
     document.getElementById("currentyear").textContent = new Date().getFullYear();
